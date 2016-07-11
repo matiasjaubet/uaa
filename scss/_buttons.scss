@@ -1,0 +1,30 @@
+.btn {
+	display: inline-block;
+	padding: 15px 25px;
+	color: $brand-primary;
+	border: 1px solid $brand-primary;
+	&:hover {
+		background: $brand-primary;
+		color: white;
+	}
+}
+.btn-primary {
+	background: $brand-primary;
+	color: white;
+	border: 0;
+	&:hover {
+		background: darken($brand-primary, 10%);
+		border: 0;
+	}
+}
+// 768px
+@media all and (min-width: $screen-portrait) {
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+}

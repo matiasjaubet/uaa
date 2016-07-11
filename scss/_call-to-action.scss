@@ -1,0 +1,126 @@
+.box-call-to-action {
+	margin-bottom: 50px;
+	ul li {
+		margin-left: 15px;
+		margin-right: 15px;
+		-webkit-transform: skew(-10deg);
+		-moz-transform: skew(-10deg);
+		-o-transform: skew(-10deg);
+		background: $brand-primary;
+		display: block;
+		text-align: center;
+		margin-bottom: 15px;
+		&:hover {
+			background: lighten($brand-primary, 5%);
+		}
+		a {
+			padding: 20px 10px;
+			-webkit-transform: none;
+	   		-moz-transform: none;
+	    	-o-transform: none;
+			display: block;
+			-webkit-transform: skew(10deg);
+		   	-moz-transform: skew(10deg);
+		    -o-transform: skew(10deg);
+		    color: white;
+		    font-size: 16px;
+		    i {
+		    	margin-right: 10px;
+		    	font-size: 20px;
+		    	vertical-align: middle;
+		    	display: inline-block;
+		    }
+		}
+		&:nth-child(2) {
+			background: lighten($brand-primary, 10%);	
+			&:hover {
+				background: lighten($brand-primary, 15%);
+			}
+		}
+		&:nth-child(3) {
+			background: lighten($brand-primary, 20%);	
+			&:hover {
+				background: lighten($brand-primary, 25%);
+			}
+		}
+	}
+}
+
+// 768px
+@media all and (min-width: 768px) {
+	.box-call-to-action {
+		font-size: 0;
+		ul {
+			li {
+				display: inline-block;
+				vertical-align: middle;
+				width: 30%;
+				margin: 0 10px 30px 10px;
+			}
+		}
+	}
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+	.box-slider {
+		position: relative;
+	}
+	.box-call-to-action {
+		margin-bottom: 0;
+		position: absolute;
+		width: 200px;
+		right: 5%;
+		top: 25%;
+		z-index: 9999;
+		ul {
+			li {
+				display: block;
+				width: 100%;
+				margin-bottom: 10px;
+				-webkit-box-shadow: 5px 5px 0 0px rgba(0,0,0,0.2);
+				box-shadow: 5px 5px 0 0px rgba(0,0,0,0.2);
+				a:hover {
+					padding-left: 2px; 
+				}
+			}
+		}
+	}
+}
+
+// 1100px
+@media all and (min-width: 1100px) {
+	.box-call-to-action {
+		right: 10%;
+		top: 15%;
+		ul {
+			li {
+				a {
+					font-size: 18px;
+					i {
+						font-size: 25px;
+						margin-right: 15px;
+					}
+				}
+			}
+		}
+	}
+}
+// 1400px
+@media all and (min-width: 1400px) {
+	.box-call-to-action {
+		right: 12%;
+	}
+}
+// 1650px
+@media all and (min-width: 1650px) {
+	.box-call-to-action {
+		right: 17%;
+	}
+}
+// 180px
+@media all and (min-width: 1800px) {
+	.box-call-to-action {
+		right: 20%;
+	}
+}

@@ -1,0 +1,70 @@
+h1, h2, h3, h4, h5, h6, p, span, a, ul, li {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+h1, h2, h3, h4, h5, h6 {
+	font-family: $primary-font-bold;
+}
+h1, .h1 {
+	font-size: 32px;
+	line-height: 1.25em;
+	margin: 10px 0;
+}
+h2, .h2 {
+	font-size: 26px;
+	line-height: 1.15em;
+	margin: 10px 0;
+}
+h3, .h3 {
+	font-size: 22px;
+	line-height: 1.136em;
+	margin: 10px 0;
+}
+h4, .h4 {
+	font-size: 18px;
+	line-height: 1.11em;
+	margin: 10px 0;
+}
+
+p {
+	font-size: 14px;
+	line-height: 1.3em;
+	margin-bottom: 20px;
+}
+
+b, strong {
+	font-family: $primary-font-bold;
+}
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+	h1, .h1 {
+		font-size: 40px;
+		line-height: 1.125em;
+	}
+	h2, .h2 {
+		font-size: 32px;
+		line-height: 1.25em;	
+	}
+	h3, .h3 {
+		font-size: 24px;
+		line-height: 1.25em;
+	}
+	h4, .h4 {
+		line-height: 1.22em;
+	}
+
+	p {
+		font-size: 15px;
+		line-height: 1.35em;
+	}
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+}

@@ -1,0 +1,70 @@
+.header {
+	.container {
+		display: table;
+		width: 100%;
+		padding: 20px;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+		.box-brand, .box-socials {
+			display: table-cell;
+			width: 40%;
+			vertical-align: middle;
+		}
+		.box-socials {
+			width: 60%;
+			text-align: right;
+		}
+	}
+}
+.box-brand {
+	img {
+		height: auto;
+		width: 100%;
+		max-width: 100px;
+	}
+}
+
+.box-socials {
+	a.fa-facebook, a.fa-twitter, a.fa-linkedin {
+		display: inline-block;
+		height: 40px;
+		width: 40px;
+		color: white;
+		background: $facebook;
+		text-align: center;
+		line-height: 40px;
+	}
+	a.fa-facebook:hover {
+		background: darken($facebook, 13%);
+	}
+	a.fa-twitter {
+		background: $twitter;
+		&:hover {
+			background: darken($twitter, 20%);
+		}
+	}
+	a.fa-linkedin {
+		background: $linkedin;
+		&:hover {
+			background: darken($linkedin, 5%);
+		}
+	}
+}
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+	.box-brand {
+		img {
+			max-width: 200px;
+		}
+	}
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+}

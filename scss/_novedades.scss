@@ -1,0 +1,35 @@
+.box-novedades {
+	h2.titulo {
+		font-family: $primary-font;
+		margin-bottom: 30px;
+		i {
+			margin-right: 10px;
+		}
+	}
+}
+
+.box-novedad {
+	margin-bottom: 40px;
+	small {
+		color: $gris;
+		font-size: 16px;
+	}
+}
+
+
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+	.box-novedad {
+		padding-right: 50px;
+	}
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+
+}

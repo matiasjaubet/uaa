@@ -1,0 +1,116 @@
+.box-eventos {
+	h2.titulo {
+		font-family: $primary-font;
+		margin-bottom: 30px;
+		i {
+			margin-right: 10px;
+		}
+	}
+}
+
+.box-evento {
+	margin-bottom: 40px;
+	small {
+		color: $gris-claro;
+		font-size: 16px;
+	}
+}
+.box-evento {
+	text-align: left;
+}
+.col-date {
+	text-align: center;
+	border: 1px solid $brand-primary;
+	display: inline-block;
+	margin: 0 auto 20px auto;
+	padding: 10px;
+	p {
+		margin: 0;
+		text-transform: uppercase;
+		line-height: 100%;
+		&.dia {
+			font-size: 10px;
+			background: $brand-primary;
+			color: white;
+			padding: 4px;
+		}
+		&.fecha {
+			font-size: 50px;
+		}
+		&.mes {
+			font-size: 23px;
+		}
+	}
+}
+.col-data {
+	h3 {
+		margin: 0 0 10px 0;
+		line-height: 1.2em;
+	}
+	small {
+		color: $gris;
+		display: block;
+	}
+	a {
+		text-decoration: underline;
+		display: inline-block;
+		padding: 10px 0 5px 0;
+	}
+}
+
+.box-evento {
+	display: table;
+	width: 100%;
+	text-align: left;
+	vertical-align: top;
+	.col-date, .col-data {
+		display: table-cell;
+		vertical-align: top;
+		width: 20%;
+	}
+	.col-data {
+		width: 80%;
+		padding-left: 20px;
+	}
+}
+.col-date {
+	border: 1px solid $gris-claro;
+}
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+	.box-evento {
+		display: table;
+		width: 100%;
+		text-align: left;
+		vertical-align: top;
+		.col-date, .col-data {
+			display: table-cell;
+			vertical-align: top;
+			width: 20%;
+		}
+		.col-data {
+			width: 80%;
+			padding-left: 20px;
+		}
+	}
+	.col-date {
+		border: 0;
+		margin: 0 auto;
+		padding: 0;
+		border-right: 1px solid $gris-claro;
+		p {
+			&.dia {
+				font-size: 12px;
+				background: transparent;
+				color: $brand-primary;
+				padding: 0px;
+			}
+		}
+	}
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+
+}
