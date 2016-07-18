@@ -1,0 +1,55 @@
+.titulo-carrera {
+	font-family: $primary-font-bold;
+	color: $brand-primary;
+	margin-bottom: 25px;
+}
+.titulo-carrera-economicas {
+	color: $economicas;
+}
+
+.caracteristicas {
+	margin-bottom: 30px;
+	li {
+		display: table;
+		width: 100%;
+		vertical-align: middle;
+		margin-bottom: 20px;
+		.cols {
+			display: table-cell;
+			vertical-align: middle;
+			width: 50px; 
+			&.last {
+				width: auto;
+			}
+		}
+	}
+	small {
+		text-transform: uppercase;
+	}
+	i, p {
+		color: $brand-primary;
+		font-size: 18px;
+		margin: 0;
+	}
+	i {
+		font-size: 30px;
+	}
+}
+
+.caracteristicas-economicas {
+	i, p {
+		color: $economicas;
+	}
+}
+
+// 768px
+@media all and (min-width: $screen-portrait) {
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+}

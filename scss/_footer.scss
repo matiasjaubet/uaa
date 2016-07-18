@@ -1,3 +1,6 @@
+.footer {
+	margin-top: 50px;
+}
 .footer-top, .footer-middle, .footer-bottom {
 	padding-top: 30px;
 	padding-bottom: 30px;
@@ -14,8 +17,11 @@
 	}
 	ul {
 		margin-bottom: 30px;
+		list-style: none;
+		padding-left: 0;
 		li {
 			padding: 0 0 10px 0;
+			margin: 0 0 10px 0;
 			a {
 				font-size: 15px;
 				color: white;
@@ -36,6 +42,8 @@
 	}
 }
 .sedes {
+	list-style: none;
+	padding-left: 0;
 	li {
 		padding: 20px;
 		-moz-box-sizing: border-box;
@@ -116,6 +124,7 @@
 			-webkit-box-sizing: border-box;
 			box-sizing: border-box;
 			ul {
+				font-size: 0;
 				margin-bottom: 0;
 				li {
 					display: block;

@@ -35,8 +35,6 @@ $(document).ready(function() {
 	
 	}
 
-
-
 	//SLIDER
 
 	$('.owl-home').owlCarousel({
@@ -46,10 +44,35 @@ $(document).ready(function() {
 	    dots: true,
 	    items: 1,
 	    navText: false,
-	    autoplay: 10000
+	    autoplay: true,
+	    autoplaySpeed: 1500,
+	    navSpeed: 2000,
 	});
 
+	$('.owl-pagina-interna').owlCarousel({
+	    loop: true,
+	    margin: 0,
+	    nav: true,
+	    dots: true,
+	    items: 1,
+	    navText: false,
+	    autoplay: 10000,
+	    autoplaySpeed: 2000,
+	    navSpeed: 2000,
+	});
+
+	
 	$('.owl-prev').addClass('fa fa-angle-left');
 	$('.owl-next').addClass('fa fa-angle-right');
+
+
+	$(".accordion").smk_Accordion({
+		closeAble: true, //boolean
+	});
+
+
+	$(document).ready(function(){
+	    $('select.styled').customSelect();
+	});
 
 });

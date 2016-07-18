@@ -9,6 +9,7 @@
 		color: white;
 		p {
 			margin-bottom: 0;
+			color: white;
 		}
 		a {
 			color: white;
@@ -49,6 +50,58 @@
 .owl-nav {
 	display: none;
 }
+
+.owl-pagina-interna {
+	max-width: 800px;
+	margin: 40px auto;
+	.item {
+		position: relative;
+		&:before {
+			content: "";
+			position: absolute;
+			width: 100%;
+			background: black;
+			background: -webkit-linear-gradient(bottom, transparent , black);
+			background: -o-linear-gradient(bottom, transparent, black);
+			background: -moz-linear-gradient(bottom, transparent, black);
+			background: linear-gradient(to bottom, transparent , black);
+			z-index: 99;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			opacity: .6;
+		}
+		.caption {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			z-index: 999;
+			padding: 20px;
+			color: white;
+			line-height: 1.4em;
+			font-size: 14px;
+		}
+	}
+	
+	.owl-dots {
+		background: transparent;
+		.owl-dot {
+			display: inline-block;
+			span {
+				height: 14px;
+				width: 14px;
+				background: $gris-claro;
+			}
+			&.active {
+				span {
+					background: lighten($brand-primary, 15%);	
+				}
+			}
+		}
+	}
+}
 // 768px
 @media all and (min-width: $screen-portrait) {
 	.owl-home {
@@ -87,7 +140,14 @@
 			}
 		}
 	}
-
+	
+	.owl-pagina-interna {
+		outline: 6px solid #f1f1f1;
+		.owl-controls {
+			right: 0;
+			width: 100%;
+		}
+	}
 	.owl-dots {
 		display: none!important;
 	}
@@ -149,6 +209,41 @@
 	.owl-prev, .owl-next {
 		font-size: 70px;
 		top: -120px;
+	}
+
+	.owl-pagina-interna {
+		.owl-controls {
+			right: 0;
+			width: 100%;
+			top: 40%;
+		}
+		.owl-prev {
+			float: left;
+			left: -50px;
+		}
+		.owl-next {
+			float: right;
+			right: -50px;
+		}
+		.owl-prev, .owl-next {
+			padding: 0px 0px;
+			display: inline-block;
+			vertical-align: middle;
+			font-size: 70px;
+			
+			color: $brand-primary;
+			position: relative;
+			top: 0px;
+			opacity: .8;
+			-webkit-transition: all 250ms ease-in-out;
+			-moz-transition: all 250ms ease-in-out;
+			-ms-transition: all 250ms ease-in-out;
+			-o-transition: all 250ms ease-in-out;
+			transition: all 250ms ease-in-out;
+			&:hover {
+				opacity: 1;
+			}
+		}
 	}
 }
 

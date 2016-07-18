@@ -17,7 +17,7 @@
 						<li><a href="">Diplomaturas</a></li>
 						<li><a href="">Cursos</a></li>
 						<li><a href="">Carreras</a></li>
-						<li><a href="">Plataforma Atlántida</a></li>
+						<li><a href="">Plataforma</a></li>
 						<li><a href="">La Universidad
 						<li><a href="">Ingreso</a></li>
 						<li><a href="">Extensión</a></li>
@@ -91,6 +91,8 @@
 		$('#loader').fadeOut(600,function(){ $(this).remove(); });
 	</script>
 	<script type="text/javascript" src="js/owl.carousel.min.js"></script>
+	<script type="text/javascript" src="js/smk-accordion.js"></script>
+	<script type="text/javascript" src="js/jquery.customSelect.min.js"></script>
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>

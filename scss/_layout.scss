@@ -35,6 +35,33 @@ hr.sep {
 	border: 0;
 	margin: 30px auto 40px auto;
 }
+
+ul {
+	list-style: disc;
+	padding-left: 30px;
+	font-size: 14px;
+	line-height: 1.4em;
+	li {
+		margin-bottom: 10px;
+	}
+}
+
+blockquote {
+	color: $brand-primary;
+	font-family: $primary-font-bold;
+	margin: 30px 0;
+}
+
+.table-2-columnas-dif {
+	&.reversa {
+		.col-dif {
+			.btn {
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+	
 // 768px
 @media all and (min-width: $screen-portrait) {
 	.container, .box-center, hr.sep { 
@@ -51,6 +78,44 @@ hr.sep {
 			display: table-cell;
 		}
 	}
+	
+	.table-2-columnas-dif {
+		display: table;
+		vertical-align: top;
+		width: 100%;
+		.col-dif {
+			width: 60%;
+			display: table-cell;
+			&.last {
+				width: 40%;
+				padding-left: 5%;
+			}
+		}
+		&.reversa {
+			.col-dif {
+				width: 30%;
+				display: table-cell;
+				vertical-align: top;
+				.btn {
+					margin-bottom: 30px;
+					-moz-box-sizing: border-box;
+					-webkit-box-sizing: border-box;
+					box-sizing: border-box;
+					border: 1px solid $brand-primary;
+					padding: 10px 20px;
+				}
+				img {
+					width: 100%;
+					height: auto;
+				}
+				&.last {
+					width: 70%;
+					padding-left: 5%;
+				}
+			}
+		}
+	}
+
 }
 
 // 992px
@@ -62,6 +127,9 @@ hr.sep {
 		padding-bottom: 30px;
 		padding-top: 30px;
 	}
+	ul {
+		font-size: 15px;
+	}
 }
 
 // 1200px
@@ -69,4 +137,16 @@ hr.sep {
 	.container, .box-center, hr.sep { 
 		max-width: 1170px;
 	}
+
+	.table-2-columnas-dif {
+		&.reversa {
+			.col-dif {
+				width: 20%;
+				&.last {
+					width: 80%;
+				}
+			}
+		}
+	}
+
 }

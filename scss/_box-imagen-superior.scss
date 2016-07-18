@@ -1,0 +1,77 @@
+.box-imagen-superior {
+	position: relative;
+	overflow: hidden;
+	padding-top: 80px;
+	padding-bottom: 20px;
+	border-bottom: 8px solid $brand-primary;
+	margin-bottom: 50px;
+	.container {
+		position: relative;
+		z-index: 999;
+	}
+	h1, small {
+		color: white;
+	}
+	h1 {
+		font-family: $primary-font-black;
+	}
+	small {
+		background: $brand-primary;
+		display: inline-block;
+		padding: 5px;
+		font-size: 14px;
+		text-transform: uppercase;
+	}
+	.rayas {
+		position: absolute;
+		bottom: -20px;
+		right: -30px;
+		max-width: 300px;
+		height: auto;
+	}
+	&:before {
+		content: "";
+		position: absolute;
+		width: 100%;
+		background: black;
+		background: -webkit-linear-gradient(bottom, transparent , black);
+		background: -o-linear-gradient(bottom, transparent, black);
+		background: -moz-linear-gradient(bottom, transparent, black);
+		background: linear-gradient(to bottom, transparent , black);
+		z-index: 99;
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		left: 0;
+		opacity: .6;
+	}
+}
+
+.box-imagen-top-economicas {
+	border-color: $economicas;
+	small {
+		background: $economicas;
+	}
+}
+// 768px
+@media all and (min-width: $screen-portrait) {
+}
+
+// 992px
+@media all and (min-width: $screen-landscape) {
+}
+
+// 1200px
+@media all and (min-width: $screen-desktop) {
+	.box-imagen-superior {
+		padding-top: 140px;
+		padding-bottom: 30px;
+		.rayas {
+			position: absolute;
+			bottom: -70px;
+			right: -100px;
+			max-width: 700px;
+			height: auto;
+		}
+	}
+}

@@ -1,0 +1,91 @@
+.smk_accordion {
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	margin-bottom: 20px;
+	font-family: $primary-font;
+}
+/**
+ * --------------------------------------------------------------
+ * Section
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in {
+	position: relative;
+	z-index: 10;
+	margin-top: -1px;
+	overflow: hidden;
+}
+/**
+ * --------------------------------------------------------------
+ * Head
+ * --------------------------------------------------------------
+ */
+.smk_accordion .accordion_in .acc_head {
+	position: relative;
+	background: #FDFDFD;
+	padding: 10px 10px 10px 0;
+	font-size: 16px;
+	display: block;
+	cursor: pointer;
+	&:before {
+		content: "+";
+		display: inline-block;
+		vertical-align: middle;
+		color: $brand-primary;
+		width: 30px;
+		height: 30px;
+		line-height: 30px;
+		font-size: 20px;
+		border: 1px solid $brand-primary;
+		text-align: center;
+		border-radius: 50%;
+		margin-right: 10px;
+	}
+}
+
+
+
+/**
+ * --------------------------------------------------------------
+ * General
+ * --------------------------------------------------------------
+ */
+
+.acc_content {
+	padding: 30px 0 0 0;
+}
+
+.smk_accordion .accordion_in.acc_active > .acc_content {
+	display: block;
+	
+	b {
+		font-family: $primary-font-bold;
+	}
+	ul {
+		list-style: disc;
+		padding-left: 30px;
+		line-height: 1.5em;
+		font-size: 15px;
+		margin-bottom: 30px;
+	}
+}
+.smk_accordion .accordion_in.acc_active > .acc_head {
+	border-bottom: 1px solid $brand-primary;
+	&:before {
+		content: "-";
+	}
+}
+
+
+.smk_accordion-economicas .accordion_in.acc_active > .acc_head {
+	border-bottom: 1px solid $economicas;
+	color: $economicas;
+	&:before {
+		border-color: $economicas;
+		color: $economicas;
+	}
+}
+
+

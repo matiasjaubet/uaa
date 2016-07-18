@@ -7,6 +7,12 @@
 		background: $brand-primary;
 		color: white;
 	}
+	i {
+		margin-right: 10px;
+		font-size: 25px;
+		display: inline-block;
+		vertical-align: middle;
+	}
 }
 .btn-primary {
 	background: $brand-primary;
@@ -17,12 +23,25 @@
 		border: 0;
 	}
 }
+
+.btn-economicas {
+	background: $economicas;
+	&:hover {
+		background: darken($economicas, 10%);
+	}
+}
 // 768px
 @media all and (min-width: $screen-portrait) {
+	.btn {
+		font-size: 13px;
+	}
 }
 
 // 992px
 @media all and (min-width: $screen-landscape) {
+	.btn {
+		font-size: 16px;
+	}
 }
 
 // 1200px
